@@ -28,16 +28,34 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-* {
+*,
+body {
 
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 
+
 }
+
+/* animations */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* animations ends*/
 
 /* flash msg */
 
@@ -101,7 +119,7 @@ ul.messages * {
     background-size: cover;
     overflow-x: hidden;
     position: relative;
-    
+
 }
 
 nav {
@@ -360,8 +378,8 @@ nav .fa-solid {
 
 }
 
-.icons a{
-    
+.icons a {
+
     text-decoration: none;
     color: white;
 }
@@ -426,7 +444,7 @@ nav .fa-solid {
 
 /* About Section Media Queries */
 
-@media (min-width: 481px) and (max-width : 950px) {
+@media (min-width: 481px) and (max-width : 1050px) {
 
     .container {
         display: flex;
@@ -484,6 +502,12 @@ nav .fa-solid {
     .about-para {
         padding: 0 50px;
     }
+
+    .abtbtn {
+
+        margin-top: 15px;
+
+    }
 }
 
 @media(max-width:481px) {
@@ -529,6 +553,10 @@ nav .fa-solid {
     .innerCard>p {
         margin: 25px 0;
 
+    }
+
+    .abtbtn {
+        margin-top: 10px;
     }
 
     /* .about-para{
@@ -1010,6 +1038,163 @@ nav .fa-solid {
     transform: translate(-50%, -50%);
 }
 
+/* project Secton Styling */
+
+.projects {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #030715;
+
+}
+
+.projects h2 {
+
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    color: #f0f0f0;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+
+
+.projects h2::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(250, 0, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.projects h2:hover::after {
+    width: 25%;
+}
+
+
+
+
+.proj-desc {
+
+    backdrop-filter: blur(20px);
+    color: white;
+    padding: 25px;
+    height: 60vh;
+    margin: 0 10px;
+
+
+}
+
+.Projects-text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.Projects-text li {
+
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.Projects-text li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands,
+.fa-github {
+    margin-top: 24px;
+    font-size: 2rem;
+}
+
+.Projects-text li a:hover {
+    color: red
+}
+
+.proj-desc p {
+
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+
+}
+
+.proj-desc h3 {
+    padding: 10px 0;
+    text-decoration: underline darkturquoise;
+}
+
+.proj-desc {
+    font-weight: 300;
+}
+
+/*  media Queries For Projects Section  */
+
+@media(max-width:800px) {
+
+    .projects h2 {
+        margin-top: 0px;
+    }
+
+    .projects h2:hover::after {
+        width: 80%;
+    }
+
+    .proj-desc {
+
+        border-right: 2px solid red;
+    }
+
+    .Projects-text {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .proj-desc {
+        height: auto;
+    }
+
+
+    .proj-desc p {
+
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        word-spacing: 1.5px;
+        font-weight: 300;
+
+    }
+
+    .fa-brands {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 /*-----------------------
         Media queries
@@ -1021,15 +1206,20 @@ nav .fa-solid {
 @media(max-width:700px) {
 
     .cnBtn {
-        font-size: 13px;
+        font-size: 15px
     }
 
     .textBox h1 {
-        font-size: 25px;
+        font-size: xx-large;
     }
 
     .nav-links ul li {
         display: block;
+        font-size: inherit;
+    }
+
+    .nav-links ul li a {
+        font-size: larger;
     }
 
     .nav-links {
@@ -1292,20 +1482,7 @@ textarea.contact-form-text {
 /* contact secton Ends */
 
 
-/* animations */
 
-.reveal {
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-/* animations ends*/
 
 
 /* skill media queries starts */
