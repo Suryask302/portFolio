@@ -1,11 +1,11 @@
 {
-  "name": "projectportfolio",
+  "name": "my_portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "a portfolio website with backend for handeling form data",
   "main": "script.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,8 @@
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "nodemailer": "^6.7.7"
+  },
+  "engines": {
+    "node": "16.14.2"
   }
 }
