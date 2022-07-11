@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.projects {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #030715;
+
+}
+
+.projects h2 {
+
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    color: #f0f0f0;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+
+
+.projects h2::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(250, 0, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.projects h2:hover::after {
+    width: 25%;
+}
+
+
+
+
+.proj-desc {
+
+    backdrop-filter: blur(20px);
+    color: white;
+    padding: 25px;
+    height: 60vh;
+    margin: 0 10px;
+
+
+}
+
+.Projects-text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.Projects-text li {
+
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.Projects-text li a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands,
+.fa-github {
+    margin-top: 24px;
+    font-size: 2rem;
+}
+
+.Projects-text li a:hover {
+    color: red
+}
+
+.proj-desc p {
+
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+
+}
+
+.proj-desc h3 {
+    padding: 10px 0;
+    text-decoration: underline darkturquoise;
+}
+
+.proj-desc {
+    font-weight: 300;
+}
+
+/*  media Queries For Projects Section  */
+
+@media(max-width:800px) {
+
+    .projects h2 {
+        margin-top: 0px;
+    }
+    .projects h2:hover::after {
+        width: 44%;
+    }
+
+    .proj-desc {
+        
+        border-right: 2px solid red;
+    }
+
+    .Projects-text {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .proj-desc {
+        height: auto;
+    }
+
+
+    .proj-desc p {
+
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        word-spacing: 1.5px;
+
+    }
+
+}

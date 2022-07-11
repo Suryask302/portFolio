@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/913c68f621.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- Owl Carousel CSS files -->
+    <link rel="stylesheet" href="owl-used-files/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-used-files/owl.theme.default.min.css">
+
+
+    <title>Suraj Bhoyar Portfolio</title>
+
+
+</head>
+
+<body>
+
+    <%- include('./flash-message.ejs') %>
+
+        <!-- Header Section -->
+        <section class="header">
+            <nav id="navbar">
+                <a href="#"><img src="./images/watermark+1.png"></a>
+                <div class="nav-links" id="navLLL">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="#"> Home </a></li>
+                        <li> <a href="#abt"> About</a></li>
+                        <li> <a href="#prjct"> Projects</a></li>
+                        <li> <a href="#cntct"> Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="textBox">
+                <h1>i'm Suraj Bhoyar</h1>
+
+                <p class="typewriter">&nbsp;
+                    <span data-text="i Live in Yavatmal(MH)., iam a Backend Developer."></span>
+                </p>
+
+                <a href="#cntct" class="cnBtn"> Lets get Connected</a>
+            </div>
+        </section>
+
+        <!-- Header Section End -->
+
+        <!-- About Me Section-->
+        <div id="abt" class="aboutWrapper">
+            <div class="abtSecHeading">
+                <h1>Profile</h1>
+            </div>
+            <div class="container">
+                <div class="left reveal">
+                    <h3>Details</h3>
+                    <div class="leftcontent">
+                        <h5>Birth Date</h5> 27 April 1999
+                        <h5>Age</h5>23 years
+                        <h5>City</h5> Yavatmal, Maharashtra
+                    </div>
+
+                </div>
+                <div class="right reveal">
+                    <h3> About me </h3>
+                    <div class="about-para">
+                        <p>
+                            i am a (learner) Backend Developer. <br> I've been coding for over 5
+                            months
+                            now. As of now I'am willing and excited to work with both startups and large corporations to
+                            build &
+                            scale their companies. <br>
+                        </p>
+                        <br>
+                        <p>
+                            as of now I have done some projects With NodeJS, Express And MongoDB. <br>
+                            I will deliver Real Value by giving my best to the projects,
+                            that will help
+                            me to enter the world of Tech 🙂
+                        </p>
+                    </div>
+                    <button class="abtbtn"> Resume </button>
+                </div>
+                <div class="card reveal">
+                    <div class="innerCard">
+                        <div class="cardimg">
+                            <img src="./images/thisisfinal.jpg" alt="">
+                        </div>
+                        <h2> <span>Hello!</span> <br> i am suraj Bhoyar</h2>
+                        <p>i did B.C.A from Dr.BNCPE college Yavatmal. <br>currently i am a Backend
+                            Developer trainee at Function up!
+                        </p>
+                        <ul class="icons">
+                            <li><a href="https://github.com/Suryask302" target="_blank"><i
+                                        class="fab fa-github-alt"></i></a></li>
+                            <li><a href="https://twitter.com/SuryaSk_" target="_blank"> <i class="fab fa-twitter"></i>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/in/suraj-bhoyar-254405206/" target="_blank"> <i
+                                        class="fab fa-linkedin"></i> </a></li>
+                            <li><a href="https://www.instagram.com/surya_b_patil/" target="_blank"><i
+                                        class="fab fa-instagram"></i> </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Section Ends Here -->
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <!-- Skills And Education Section -->
+        <div class="combine reveal">
+            <!-- Skills Section Starts From Here -->
+            <section id="skillsC">
+                <div class="skill-container">
+                    <div class="skillset">
+                        <h3>Skills</h3>
+                        <div class="skill-lockup">
+                            <span class="skill-name mb">javaScript</span><span class="skill-status">85%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level  javaScript"></span>
+                            </span>
+                        </div><!-- Javascript end -->
+
+                        <div class="skill-lockup mr">
+                            <span class="skill-name mb">NodeJS</span><span class="skill-status">80%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level NodeJS"></span>
+                            </span>
+                        </div><!-- NodeJs end -->
+
+                        <div class="skill-lockup">
+                            <span class="skill-name mb">Express</span><span class="skill-status">90%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level Express"></span>
+                            </span>
+                        </div><!-- Express end -->
+
+                        <div class="skill-lockup mr">
+                            <span class="skill-name mb">Mongo Db</span><span class="skill-status">70%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level MongoDb"></span>
+                            </span>
+                        </div><!-- MongoDB end -->
+
+                        <div class="skill-lockup">
+                            <span class="skill-name mb">React</span><span class="skill-status">50%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level React"></span>
+                            </span>
+                        </div><!-- React end -->
+
+                        <div class="skill-lockup mr">
+                            <span class="skill-name mb">Html5</span><span class="skill-status">75%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level Html55"></span>
+                            </span>
+                        </div>
+                        <div class="skill-lockup mr">
+                            <span class="skill-name mb">Css</span><span class="skill-status">65%</span>
+                            <span class="skill-bar">
+                                <span class="skill-level css"></span>
+                            </span>
+                        </div><!-- CSS end -->
+                    </div><!-- skillset end -->
+                </div><!-- container end -->
+            </section>
+
+            <!-- Skills Section Ends Here -->
+
+            <!-- Education Section Starts  -->
+
+            <div class="main-ED reveal">
+                <h3 class="heading-ED">Education🎓</h3>
+                <div class="container-ED">
+                    <ul class="timeline-ul">
+                        <li>
+                            <h3 class="title-ED">Function Up, Backend Developer Trainee</h3>
+                            <p> Trained in Backend Development using Nodejs with Express and MongoDB. <br>
+                                - Competent in Git. <br>
+                                - Understand caching fundamentals and familiar with Redis <br>
+                                - Familiar with AWS S3. <br>
+                                - Skilled in teamwork, owning tasks and timely deliveries
+                            </p>
+                            <span class="circle"></span>
+                            <span class="date" style="width: 192px;">31 jan 2021 - present</span>
+                        </li>
+                        <li>
+                            <h3 class="title-ED">BCA - Bachelor of Computer Applications</h3>
+                            <p>Branch - BCA<br>
+                                College - DR.BNCPE Yavatmal (MH)<br>
+                                University - SGBAU Amravati University<br>
+                                percentage - 76.20 %
+                            </p>
+                            <span class="circle"></span>
+                            <span class="date">2018 - 2021</span>
+                        </li>
+                        <li>
+                            <h3 class="title-ED">Class 12th -HSC-</h3>
+                            <p>college - M.M College Darwha (MH) <br>
+                                Board - Maharashtra Board of higher Secondary Education..</p>
+
+                            <span class="circle"></span>
+                            <span class="date">2016 - 2017</span>
+                        </li>
+                        <li>
+                            <h3 class="title-ED">class 10th -SSC- </h3>
+                            <p> <b>School</b> - Late. VB Gherwara higher Secondary School Darwha (MH)<br>
+                                <b>Board</b> - Maharashtra Board of Secondary Education.
+                            </p>
+                            <span class="circle"></span>
+                            <span class="date">2014 - 2015</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Education Section Ends -->
+        </div>
+        <!-- Skills And Education Section End -->
+
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <!-- projects section starts -->
+
+        <section id="prjct" class="projects reveal">
+            <h2>Projects I have Done</h2>
+
+            <div class="customer-container owl-carousel owl-theme">
+                <!-- project 1 -->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3>Url-Shortner</h3>
+                        <p> <b>Role - </b> Backend Developer, <br>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB <br><br>
+                            Created a Url shortner service like Bitly for easy sharing of long url also
+                            implemented cashing solution an Redis for quick response time
+                        </p>
+                        <li><a href="https://github.com/Suryask302/Project-4"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 1 -->
+
+                <!-- project 2-->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3>Quora - (clone) </h3>
+                        <p> <b>Role - </b> Backend Developer, <br>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB <br><br>
+                            Created a clone of Quora with multiple APIs where user can ask
+                            questions Based On his/her credit score and answer the questions credit
+                            score is depended on the asked question and answers.
+                        </p>
+                        <li><a href="https://github.com/Suryask302/project_6"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 2-->
+
+                <!-- project 3-->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3>Book management website</h3>
+                        <p> <b>Role - </b> Backend Developer, <br>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB <br><br>
+                            Created a book management backend with multiple APIs for user, book, login...
+                            authentication & authorization implemented using JWT
+                        </p>
+                        <li><a href="https://github.com/Suryask302/Project-3"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 3-->
+
+                <!-- project 4-->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3>Blogging website</h3>
+                        <p> <b>Role - </b> Backend Developer, <br>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB <br><br>
+                            Created blog management website backend
+                            with multiple APIs for user, blogs , and performed crud operations
+                            authentication authorization implemented with JWT
+                        </p>
+                        <li><a href="https://github.com/Suryask302/Project_1"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 4-->
+
+                <!-- project 5-->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3> E-commerce and <br> cart management</h3>
+                        <p> <b>Role - </b> Backend Developer, <br>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB <br><br>
+                            Created a complete backend with multiple APIs (CRUD)
+                            as well as used JWT for protected
+                            APIs & aws-S3 For file uploading.
+                        </p>
+                        <li><a href="https://github.com/Suryask302/project_5"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 5-->
+
+                <!-- project 6-->
+                <article class="proj-desc">
+                    <div class="Projects-text">
+                        <h3> Role Based Access Control </h3>
+                        <p>
+                            <b>TechStack - </b> javaScript, NodeJs, MongoDB, HTML, CSS <br><br>
+                            Created a Small Role Base Access Controll Systeam ,Ejs Used For Frontend and passportJS,
+                            JWT for authentication and authorization
+                        </p>
+
+                        <li><a href="https://github.com/Suryask302/project_7"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </div>
+                </article>
+                <!-- end of project 6-->
+            </div>
+        </section>
+
+        <!-- project Section Ends -->
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <!-- contact section -->
+
+        <section id="cntct" class="contact-section">
+            <div class="contact-bg">
+                <h3>Get in Touch</h3>
+                <h2>contact</h2>
+                <p class="text">i am here to help and answer any question you might have. i look forward to hearing from
+                    you
+                    . <br> Please fill the form below and i'll get back to you as soon as possible 🙂.
+                </p>
+            </div>
+
+
+            <div class="contact-body">
+                <div class="contact-info">
+                    <div>
+                        <span><i class="fa-solid fa-mobile-screen fas"></i></span>
+                        <span>Phone No.</span>
+                        <span class="text">+91-8379008045</span>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-envelope-open-text fas"></i></span>
+                        <span>E-mail</span>
+                        <span class="text">suryask302@gmail.com</span>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fas"></i></span>
+                        <span>Address</span>
+                        <span class="text">Yavatmal, Maharashtra</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="/formdata" method="POST">
+                <input name="name" type="text" class="contact-form-text" placeholder="Your name">
+                <input name="email" type="email" class="contact-form-text" placeholder="Your email">
+                <input name="phone" type="text" class="contact-form-text" placeholder="Your phone">
+                <textarea name="message" class="contact-form-text" placeholder="Your message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+
+
+            <div class="contact-footer">
+                <div class="social-links">
+                    <a href="https://github.com/Suryask302" class="fa-brands fa-github"></a>
+                    <a href="https://twitter.com/SuryaSk_" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/surya_b_patil/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/suraj-bhoyar-254405206/" class="fab fa-linkedin"></a>
+                    <a href="#navbar" class="fa-solid fa-eject"></a>
+                </div>
+                <h5>made By<span>Suraj Bhoyar</span></h5>
+            </div>
+        </section>
+
+        <!-- contact section end-->
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <!-- Local JS file -->
+        <script src="./script.js" async defer></script>
+
+        <!-- Owl Carousel JS file -->
+        <script src="owl-used-files/owl.carousel.min.js"></script>
+
+        <!-- projects section ends -->
+
+        <!-- Menu Toggler -->
+
+        <script>
+
+            let navLinks = document.getElementById('navLLL')
+
+            function showMenu() {
+                navLinks.style.right = "0"
+                navLinks.style.transition = "0.7s ease-in-out"
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+                navLinks.style.transition = "0.7s ease-in-out"
+            }
+
+            window.onscroll = function () {
+                myfun()
+            }
+
+            function myfun() {
+                if (document.documentElement.scrollTop > 100) {
+                    navLinks.style.right = "-200px"
+                }
+            }
+
+        </script>
+
+
+</body>
+
+</html>
