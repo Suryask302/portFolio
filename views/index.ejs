@@ -28,7 +28,7 @@
     <%- include('./flash-message.ejs') %>
 
         <!-- Header Section -->
-        <section class="header">
+        <section class="header" id="myDIV">
             <nav id="navbar">
                 <a href="#"><img src="./images/watermark+1.png"></a>
                 <div class="nav-links" id="navLLL">
@@ -91,7 +91,7 @@
                     <a href="https://drive.google.com/file/d/1lqF6iHS7bxCTxGMwcS_7zG2p1SglULHe/view?usp=sharing">
                         <button class="abtbtn"> Resume </button> </a>
                 </div>
-                <div class="card reveal">
+                <div class="card">
                     <div class="innerCard">
                         <div class="cardimg">
                             <img src="./images/thisisfinal.jpg" alt="">
@@ -427,9 +427,11 @@
 
             function myfun() {
                 if (document.documentElement.scrollTop > 100) {
+                    console.log('scroll hua')
                     navLinks.style.right = "-200px"
                 }
             }
+
 
         </script>
 
