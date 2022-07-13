@@ -518,6 +518,7 @@ nav .fa-solid {
 
     .container {
         flex-wrap: wrap-reverse;
+        padding-top: 5rem;
     }
 
     .right {
